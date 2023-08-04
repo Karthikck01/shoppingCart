@@ -27,7 +27,6 @@ export default function addCartItem() {
     
     ItemInCart.forEach(element => {
         cart_item.innerHTML += cartItems(element)
-        console.log(cartItems(element,20));
     })
     
     
@@ -61,8 +60,6 @@ export default function addCartItem() {
             const removebtn = document.getElementsByClassName('cancel-cart-items')
             const qtyinput = document.querySelectorAll('input')
  
-            
-            
             for (let i = 0; i < removebtn.length; i++) {
                 qtyinput[i].addEventListener('input',() => {
                     ItemInCart[i].total = ItemInCart[i].price * qtyinput[i].value
@@ -76,7 +73,6 @@ export default function addCartItem() {
             }
         } 
         updatetotal()
-        
     })
     
 }
