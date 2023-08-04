@@ -1,0 +1,33 @@
+
+.shopping-cart{
+    position: fixed;
+    height: 100%;
+    right: 0;
+    top: 0;
+    min-width: 40%;   
+    visibility: hidden;
+    min-width: 40%;
+    overflow-y: scroll;
+}
+
+.card:hover{
+    border: 1px solid rgba(0, 0, 0, 0.449);
+}
+
+@keyframes slidein {
+    0%{
+        transform: translateX(100%);
+    }    
+}
+@keyframes slideout {
+    0%{
+        transform: translateX(0%);
+    }    
+    70%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(100%);
+
+    }
+}
